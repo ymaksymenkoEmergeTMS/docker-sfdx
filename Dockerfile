@@ -6,6 +6,3 @@ RUN apk update && apk add bash
 RUN npm install sfdx-cli --global
 RUN sfdx --version
 RUN sfdx plugins --core
-
-# revert to low privilege user
-USER node
